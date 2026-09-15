@@ -1,8 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <meta name="theme-color" content="#141711" />
 
     <!-- Open Graph (WA, Facebook, dll) -->
@@ -10,10 +13,7 @@
       property="og:image"
       content="https://weddinginvit.web.id/assets/images/ogimagefix.jpg?v=4"
     />
-    <meta
-      property="og:title"
-      content="Undangan Pernikahan Bagas & Arum"
-    />
+    <meta property="og:title" content="Undangan Pernikahan Bagas &amp; Arum" />
     <meta
       property="og:description"
       content="Kami mengundang Anda untuk hadir di hari bahagia kami."
@@ -27,296 +27,488 @@
     <meta property="og:image:height" content="630" />
     <title>Undangan Pernikahan</title>
     <link rel="icon" href="Assets/Image/ikonwsweb.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Tangerine:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;family=Tangerine:wght@400;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Poppins:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="loader" class="loader-wrapper">
-        <div id="lottie-container"></div>
+      <div id="lottie-container"></div>
     </div>
 
     <audio id="bgMusic" loop preload="none">
-        <source src="Assets/Audio/backsound.mp3" type="audio/mp3">
+      <source src="Assets/Audio/backsound.mp3" type="audio/mpeg" />
     </audio>
 
-    <img src="./Assets/Image/1.png" class="floating-leaf leaf-1" alt="Leaf 1" loading="lazy">
-    <img src="./Assets/Image/2.png" class="floating-leaf leaf-2" alt="Leaf 2" loading="lazy">
-    <img src="./Assets/Image/3.png" class="floating-leaf leaf-4" alt="Leaf 4" loading="lazy">
-    <img src="./Assets/Image/5.png" class="floating-leaf leaf-3" alt="Leaf 3" loading="lazy">
     <section id="cover" class="cover-page">
-        <div class="swipe-overlay" id="swipeOverlay"></div>
-        <div class="cover-content">
-            <h1 class="cover-label">The Wedding Of</h1>
-            <h2 class="cover-names">Bagas & Arum</h2>
-            <p class="cover-date">25 - 28 September 2026</p>
-            
-            <div class="guest-info">
-                <p class="cover-to">Kepada Yth.</p>
-                <p class="cover-guest">Bapak/Ibu/Saudara/i</p>
-                <div class="cover-guest-name-container">
-                    <p class="cover-guest-name" id="guestName">...............</p>
-                </div>
-            </div>
-
-            <button class="btn-open" id="openBtn">
-                Buka Undangan
-            </button>
-            <div class="swipe-hint">
-                <span class="arrow">→</span>
-            </div>
+      <div class="swipe-overlay" id="swipeOverlay"></div>
+      <div class="cover-content">
+        <div class="cover-photo-container">
+          <div class="cover-photo-wrapper">
+            <img
+              src="Assets/Image/arumbagas.webp"
+              alt="Bagas &amp; Arum"
+              class="cover-photo-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="cover-photo-border"></div>
+          <svg class="cover-flower cover-flower-1" viewBox="0 0 50 50">
+            <circle fill="#4d1211" cx="25" cy="15" r="7" />
+            <circle fill="#4d1211" cx="15" cy="25" r="7" />
+            <circle fill="#4d1211" cx="35" cy="25" r="7" />
+            <circle fill="#4d1211" cx="20" cy="35" r="7" />
+            <circle fill="#4d1211" cx="30" cy="35" r="7" />
+            <circle fill="#f1b165" cx="25" cy="25" r="4" />
+          </svg>
+          <svg class="cover-flower cover-flower-2" viewBox="0 0 50 50">
+            <circle fill="#4d1211" cx="25" cy="15" r="7" />
+            <circle fill="#4d1211" cx="15" cy="25" r="7" />
+            <circle fill="#4d1211" cx="35" cy="25" r="7" />
+            <circle fill="#4d1211" cx="20" cy="35" r="7" />
+            <circle fill="#4d1211" cx="30" cy="35" r="7" />
+            <circle fill="#f1b165" cx="25" cy="25" r="4" />
+          </svg>
+          <svg class="cover-flower cover-flower-3" viewBox="0 0 50 50">
+            <circle fill="#4d1211" cx="25" cy="15" r="7" />
+            <circle fill="#4d1211" cx="15" cy="25" r="7" />
+            <circle fill="#4d1211" cx="35" cy="25" r="7" />
+            <circle fill="#4d1211" cx="20" cy="35" r="7" />
+            <circle fill="#4d1211" cx="30" cy="35" r="7" />
+            <circle fill="#f1b165" cx="25" cy="25" r="4" />
+          </svg>
+          <svg class="cover-flower cover-flower-4" viewBox="0 0 50 50">
+            <circle fill="#4d1211" cx="25" cy="15" r="7" />
+            <circle fill="#4d1211" cx="15" cy="25" r="7" />
+            <circle fill="#4d1211" cx="35" cy="25" r="7" />
+            <circle fill="#4d1211" cx="20" cy="35" r="7" />
+            <circle fill="#4d1211" cx="30" cy="35" r="7" />
+            <circle fill="#f1b165" cx="25" cy="25" r="4" />
+          </svg>
         </div>
+
+        <div class="cover-text-group">
+          <h1 class="cover-label">The Wedding Of</h1>
+          <h1 class="cover-names">Bagas &amp; Arum</h1>
+          <p class="cover-date">25 - 28 September 2026</p>
+
+          <div class="guest-info">
+            <p class="cover-to">Kepada Yth.</p>
+            <p class="cover-guest">Bapak/Ibu/Saudara/i</p>
+            <div class="cover-guest-name-container">
+              <p class="cover-guest-name" id="guestName">...............</p>
+            </div>
+          </div>
+
+          <button class="btn-open" id="openBtn">Buka Undangan</button>
+
+          <img
+            src="Assets/Image/dekorcover.webp"
+            alt="Dekorasi"
+            class="cover-decor"
+          />
+        </div>
+      </div>
     </section>
 
     <nav class="floating-nav hidden">
-        <a href="#countdown" class="nav-item active">
-            <span class="material-symbols-rounded">favorite</span>
-        </a>
-        <a href="#couple" class="nav-item">
-            <span class="material-symbols-rounded">people</span>
-        </a>
-        <a href="#event" class="nav-item">
-            <span class="material-symbols-rounded">event</span>
-        </a>
-        <a href="#gallery" class="nav-item">
-            <span class="material-symbols-rounded">photo_library</span>
-        </a>
-        <!-- <a href="#story" class="nav-item">
+      <a href="#countdown" class="nav-item active">
+        <span class="material-symbols-rounded">favorite</span>
+      </a>
+      <a href="#couple" class="nav-item">
+        <span class="material-symbols-rounded">people</span>
+      </a>
+      <a href="#event" class="nav-item">
+        <span class="material-symbols-rounded">event</span>
+      </a>
+      <a href="#gallery" class="nav-item">
+        <span class="material-symbols-rounded">photo_library</span>
+      </a>
+      <!-- <a href="#story" class="nav-item">
             <span class="material-symbols-rounded">auto_stories</span>
         </a> -->
-        <a href="#gift" class="nav-item">
-            <span class="material-symbols-rounded">card_giftcard</span>
-        </a>
-        <a href="#rsvp" class="nav-item">
-            <span class="material-symbols-rounded">checklist</span>
-        </a>
-        <a href="#wishes" class="nav-item">
-            <span class="material-symbols-rounded">chat</span>
-        </a>
+      <a href="#gift" class="nav-item">
+        <span class="material-symbols-rounded">card_giftcard</span>
+      </a>
+      <a href="#rsvp" class="nav-item">
+        <span class="material-symbols-rounded">checklist</span>
+      </a>
+      <a href="#wishes" class="nav-item">
+        <span class="material-symbols-rounded">chat</span>
+      </a>
     </nav>
 
     <button id="musicToggle" class="music-control-btn hidden">
-        <span class="material-symbols-rounded">volume_up</span>
+      <span class="material-symbols-rounded">volume_up</span>
     </button>
 
     <main id="mainContent" class="main-content hidden">
+      <section id="countdown" class="section section-countdown">
+        <div class="countdown-content">
+          <p class="section-label scroll-animate">The Wedding Of</p>
+          <div class="couple-photos-countdown scroll-animate">
+            <img
+              src="Assets/Image/arumbagas2.webp"
+              alt="Mempelai"
+              class="photo-countdown"
+              loading="lazy"
+            />
+          </div>
+          <h2 class="couple-names scroll-animate">Bagas &amp; Arum</h2>
+          <p class="event-date-main scroll-animate">25 - 28 September, 2026</p>
+          <p class="invitation-text scroll-animate">
+            Kami mohon kehadirannya untuk menghadiri acara pernikahan
+            putra-putri kami
+          </p>
+          <p class="invitation-text scroll-animate">
+            25 September, 2026 | Akad Nikah &amp; Resepsi
+          </p>
+          <div class="countdown-timer scroll-animate" id="countdownTimer">
+            <div class="time-box">
+              <span class="time-number" id="days">00</span>
+              <span class="time-label">Hari</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="hours">00</span>
+              <span class="time-label">Jam</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="minutes">00</span>
+              <span class="time-label">Menit</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="seconds">00</span>
+              <span class="time-label">Detik</span>
+            </div>
+          </div>
+          <a
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Acara%20Pernikahan%20Bagas%20%26%20Arum&amp;dates=20260925/20260925&amp;details=Acara%20Pernikahan%20Bagas%20%26%20Arum%0AReminder%3A%201%20hari%20sebelumnya%20pukul%2017.00&amp;location=Dsn%20Berjel%2C%20Ds%20Pucangro%20Kec%20Gudo%20Kab%20Jombang"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-save-date scroll-animate"
+          >
+            <span class="material-symbols-rounded">calendar_month</span>
+            Save the Date
+          </a>
 
-        <section id="countdown" class="section section-countdown">
-            <div class="countdown-content">
-                <p class="section-label scroll-animate">The Wedding Of</p>
-                <div class="couple-photos-countdown scroll-animate">
-                    <img src="Assets/Image/arumbagas2.webp" alt="Mempelai" class="photo-countdown" loading="lazy">
-                </div>
-                <h2 class="couple-names scroll-animate">Bagas & Arum</h2>
-                <p class="event-date-main scroll-animate">25 - 28 September, 2026</p>
-                <p class="invitation-text scroll-animate">Kami mohon kehadirannya untuk menghadiri acara pernikahan putra-putri kami</p>
-                <p class="invitation-text scroll-animate">25 September, 2026 | Akad Nikah & Resepsi</p>
-                <div class="countdown-timer scroll-animate" id="countdownTimer">
-                    <div class="time-box">
-                        <span class="time-number" id="days">00</span>
-                        <span class="time-label">Hari</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="hours">00</span>
-                        <span class="time-label">Jam</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="minutes">00</span>
-                        <span class="time-label">Menit</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="seconds">00</span>
-                        <span class="time-label">Detik</span>
-                    </div>
-                </div>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Acara%20Pernikahan%20Bagas%20%26%20Arum&dates=20260925/20260925&details=Acara%20Pernikahan%20Bagas%20%26%20Arum%0AReminder%3A%201%20hari%20sebelumnya%20pukul%2017.00&location=Dsn%20Berjel%2C%20Ds%20Pucangro%20Kec%20Gudo%20Kab%20Jombang" target="_blank" class="btn-save-date scroll-animate">
-                    <span class="material-symbols-rounded">calendar_month</span>
-                    Save the Date
-                </a>
+          <p class="invitation-text scroll-animate">
+            28 September, 2026 | Ngunduh Mantu
+          </p>
+          <div class="countdown-timer scroll-animate" id="countdownTimer1">
+            <div class="time-box">
+              <span class="time-number" id="days1">00</span>
+              <span class="time-label">Hari</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="hours1">00</span>
+              <span class="time-label">Jam</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="minutes1">00</span>
+              <span class="time-label">Menit</span>
+            </div>
+            <div class="time-box">
+              <span class="time-number" id="seconds1">00</span>
+              <span class="time-label">Detik</span>
+            </div>
+          </div>
+          <a
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Acara%20Pernikahan%20Bagas%20%26%20Arum&amp;dates=20260928/20260928&amp;details=Acara%20Pernikahan%20Bagas%20%26%20Arum%0AReminder%3A%201%20hari%20sebelumnya%20pukul%2017.00&amp;location=Dsn%20Klepek%2C%20Ds%20Klepek%20Kec%20Kunjang%20Kab%20Kediri"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-save-date scroll-animate"
+          >
+            <span class="material-symbols-rounded">calendar_month</span>
+            Save the Date
+          </a>
+        </div>
+      </section>
 
-                <p class="invitation-text scroll-animate">28 September, 2026 | Ngunduh Mantu </p>
-                <div class="countdown-timer scroll-animate" id="countdownTimer1">
-                    <div class="time-box">
-                        <span class="time-number" id="days1">00</span>
-                        <span class="time-label">Hari</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="hours1">00</span>
-                        <span class="time-label">Jam</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="minutes1">00</span>
-                        <span class="time-label">Menit</span>
-                    </div>
-                    <div class="time-box">
-                        <span class="time-number" id="seconds1">00</span>
-                        <span class="time-label">Detik</span>
-                    </div>
-                </div>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Acara%20Pernikahan%Bagas%20%26%20Arum&dates=20260928/20260928&details=Acara%20Pernikahan%20Bagas%20%26%20Arum%0AReminder%3A%201%20hari%20sebelumnya%20pukul%2017.00&location=Dsn%20Klepek%2C%20Ds%20Klepek%20Kec%20Kunjang%20Kab%20Kediri" target="_blank" class="btn-save-date scroll-animate">
-                    <span class="material-symbols-rounded">calendar_month</span>
-                    Save the Date
-                </a>
+      <section id="couple" class="section section-quran">
+        <div class="quran-bg">
+          <p class="quran-text scroll-animate">
+            Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            untukmu pasangan dari jenismu sendiri, supaya kamu merasa tenteram
+            kepadanya, dan dijadikan-Nya di antaramu mawaddah dan rahmah.
+          </p>
+          <p class="quran-surah scroll-animate">QS. Ar-Rum : 21</p>
+        </div>
+        <div class="invitation-card">
+          <p class="card-salam scroll-animate">
+            Assalamu'alaikum Warahmatullahi Wabarakatuh
+          </p>
+          <p class="card-intro scroll-animate">
+            Atas berkah dan rahmat Allah SWT, serta dengan mengikuti sunnah
+            Rasulullah SAW, kami keluarga besar :
+          </p>
+          <div class="bride-info">
+            <div class="bride-photo-wrapper scroll-animate">
+              <img
+                src="Assets/Image/arum.webp"
+                alt="arum"
+                class="bride-photo"
+                loading="lazy"
+              />
+              <div class="flower-decor-left">
+                <svg viewBox="0 0 50 50" class="flower-svg-small">
+                  <circle fill="#8B0000" cx="25" cy="15" r="8" />
+                  <circle fill="#8B0000" cx="15" cy="25" r="8" />
+                  <circle fill="#8B0000" cx="35" cy="25" r="8" />
+                  <circle fill="#8B0000" cx="20" cy="35" r="8" />
+                  <circle fill="#8B0000" cx="30" cy="35" r="8" />
+                  <circle fill="#FFFFFF" cx="25" cy="25" r="5" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="bride-name scroll-animate">Ryany Kuztya Ningrum</h3>
+            <p class="bride-parents scroll-animate">
+              Putri dari Bpk Sudiono (Alm)
+            </p>
+            <p class="bride-parents scroll-animate">Ibu Sunarni</p>
+            <p class="bride-address scroll-animate">
+              Dsn Berjel, Ds Pucangro, Kec. Gudo, Kab. Jombang
+            </p>
+          </div>
+          <p class="and-text scroll-animate">&amp;</p>
+          <div class="groom-info">
+            <div class="groom-photo-wrapper scroll-animate">
+              <img
+                src="Assets/Image/bagas.webp"
+                alt="Bagas"
+                class="groom-photo"
+                loading="lazy"
+              />
+              <div class="flower-decor-right">
+                <svg viewBox="0 0 50 50" class="flower-svg-small">
+                  <circle fill="#4d1211" cx="25" cy="15" r="8" />
+                  <circle fill="#4d1211" cx="15" cy="25" r="8" />
+                  <circle fill="#4d1211" cx="35" cy="25" r="8" />
+                  <circle fill="#4d1211" cx="20" cy="35" r="8" />
+                  <circle fill="#4d1211" cx="30" cy="35" r="8" />
+                  <circle fill="#f1b165" cx="25" cy="25" r="5" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="groom-name scroll-animate">Bagas Ali Fadli Saputra</h3>
+            <p class="groom-parents scroll-animate">
+              Putra dari Bpk Ali Sadikan
+            </p>
+            <p class="groom-parents scroll-animate">Ibu Marfiyah</p>
+            <p class="groom-address scroll-animate">
+              Dsn. Klepek, Ds. Klepek, Kec. Kunjang, Kab. Kediri
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="event" class="section section-event">
+        <div class="event-pill-wrapper">
+          <div class="event-pill">
+            <!-- Akad Nikah -->
+            <div class="event-item">
+              <div class="event-icon-rings scroll-animate">
+                <svg viewBox="0 0 100 100" class="rings-svg">
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="60"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M50 20 L50 30 M45 25 L55 25"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <h3 class="event-title-new scroll-animate">Akad Nikah</h3>
+              <p class="event-month-new scroll-animate">SEPTEMBER</p>
+              <div class="event-date-row scroll-animate">
+                <div class="event-side">JUM'AT</div>
+                <div class="event-day-counter" data-target="25">0</div>
+                <div class="event-side">2026</div>
+              </div>
+              <p class="event-time-new scroll-animate">Pukul 08.00 - Selesai</p>
+              <div class="event-divider-new scroll-animate"></div>
+              <p class="event-location-title scroll-animate">
+                KEDIAMAN MEMPELAI WANITA
+              </p>
+              <p class="event-location-address scroll-animate">
+                Dsn. Berjel, Ds. Pucangro, Kec. Gudo, Kab. Jombang
+              </p>
             </div>
 
-        </section>
+            <div class="event-spacer"></div>
 
-        <section id="couple" class="section section-quran">
-
-            <div class="quran-bg">
-                <p class="quran-text scroll-animate">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu mawaddah dan rahmah.</p>
-                <p class="quran-surah scroll-animate">QS. Ar-Rum : 21</p>
+            <!-- Resepsi -->
+            <div class="event-item">
+              <div class="event-icon-rings scroll-animate">
+                <svg viewBox="0 0 100 100" class="rings-svg">
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="60"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M50 20 L50 30 M45 25 L55 25"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <h3 class="event-title-new scroll-animate">Resepsi</h3>
+              <p class="event-month-new scroll-animate">SEPTEMBER</p>
+              <div class="event-date-row scroll-animate">
+                <div class="event-side">JUM'AT</div>
+                <div class="event-day-counter" data-target="25">0</div>
+                <div class="event-side">2026</div>
+              </div>
+              <p class="event-time-new scroll-animate">Pukul 13.00 - Selesai</p>
+              <div class="event-divider-new scroll-animate"></div>
+              <p class="event-location-title scroll-animate">
+                KEDIAMAN MEMPELAI WANITA
+              </p>
+              <p class="event-location-address scroll-animate">
+                Dsn. Berjel, Ds. Pucangro, Kec. Gudo, Kab. Jombang
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=-7.6385007%2C112.1909227"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-maps-new scroll-animate"
+              >
+                <span class="material-symbols-rounded">map</span>
+                Buka Google Maps
+              </a>
             </div>
-            <div class="invitation-card">
-                <p class="card-salam scroll-animate">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
-                <p class="card-intro scroll-animate">Atas berkah dan rahmat Allah SWT, serta dengan mengikuti sunnah Rasulullah SAW, kami keluarga besar :</p>
-                <div class="bride-info">
-                    <div class="bride-photo-wrapper scroll-animate">
-                        <img src="Assets/Image/arum.webp" alt="arum" class="bride-photo" loading="lazy">
-                        <div class="flower-decor-left">
-                            <svg viewBox="0 0 50 50" class="flower-svg-small">
-                                <circle fill="#8B0000" cx="25" cy="15" r="8"/>
-                                <circle fill="#8B0000" cx="15" cy="25" r="8"/>
-                                <circle fill="#8B0000" cx="35" cy="25" r="8"/>
-                                <circle fill="#8B0000" cx="20" cy="35" r="8"/>
-                                <circle fill="#8B0000" cx="30" cy="35" r="8"/>
-                                <circle fill="#FFFFFF" cx="25" cy="25" r="5"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="bride-name scroll-animate">Ryany Kuztya Ningrum</h3>
-                    <p class="bride-parents scroll-animate">Putri dari Bpk Sudiono (Alm)</p>
-                    <p class="bride-parents scroll-animate">Ibu Sunarni</p>
-                    <p class="bride-address scroll-animate">Dsn Berjel, Ds Pucangro, Kec. Gudo, Kab. Jombang</p>
-                </div>
-                <p class="and-text scroll-animate">&</p>
-                <div class="groom-info">
-                    <div class="groom-photo-wrapper scroll-animate">
-                        <img src="Assets/Image/bagas.webp" alt="Bagas" class="groom-photo" loading="lazy">
-                        <div class="flower-decor-right">
-                            <svg viewBox="0 0 50 50" class="flower-svg-small">
-                                <circle fill="#8B0000" cx="25" cy="15" r="8"/>
-                                <circle fill="#8B0000" cx="15" cy="25" r="8"/>
-                                <circle fill="#8B0000" cx="35" cy="25" r="8"/>
-                                <circle fill="#8B0000" cx="20" cy="35" r="8"/>
-                                <circle fill="#8B0000" cx="30" cy="35" r="8"/>
-                                <circle fill="#FFFFFF" cx="25" cy="25" r="5"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <h3 class="groom-name scroll-animate">Bagas Ali Fadli Saputra</h3>
-                    <p class="groom-parents scroll-animate">Putra dari Bpk Ali Sadikan</p>
-                    <p class="groom-parents scroll-animate">Ibu Marfiyah</p>
-                    <p class="groom-address scroll-animate">Dsn. Klepek, Ds. Klepek, Kec. Kunjang, Kab. Kediri</p>
-                </div>
+
+            <!-- Ngunduh Mantu -->
+            <div class="event-item">
+              <div class="event-icon-rings scroll-animate">
+                <svg viewBox="0 0 100 100" class="rings-svg">
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="60"
+                    cy="40"
+                    r="15"
+                    fill="none"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M50 20 L50 30 M45 25 L55 25"
+                    stroke="#4d1211"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <h3 class="event-title-new scroll-animate">Ngunduh Mantu</h3>
+              <p class="event-month-new scroll-animate">SEPTEMBER</p>
+              <div class="event-date-row scroll-animate">
+                <div class="event-side">SENIN</div>
+                <div class="event-day-counter" data-target="28">0</div>
+                <div class="event-side">2026</div>
+              </div>
+              <p class="event-time-new scroll-animate">Pukul 10.00 - Selesai</p>
+              <div class="event-divider-new scroll-animate"></div>
+              <p class="event-location-title scroll-animate">
+                KEDIAMAN MEMPELAI PRIA
+              </p>
+              <p class="event-location-address scroll-animate">
+                Dsn. Klepek, Ds. Klepek, Kec. Kunjang, Kab. Kediri
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=-7.9800555%2C111.5384412"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-maps-new scroll-animate"
+              >
+                <span class="material-symbols-rounded">map</span>
+                Buka Google Maps
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="event" class="section section-event">
+      <section id="gallery" class="section section-gallery">
+        <div class="section-heading-container scroll-animate">
+          <div class="section-heading-circle-left"></div>
+          <h2 class="section-heading">Gallery</h2>
+          <div class="section-heading-circle-right"></div>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="Assets/Image/arumbagas.webp"
+            alt="Gallery 1"
+            class="gallery-img scroll-animate"
+          />
+          <img
+            src="Assets/Image/arumbagas1.webp"
+            alt="Gallery 2"
+            class="gallery-img scroll-animate"
+          />
+          <img
+            src="Assets/Image/arum.webp"
+            alt="Gallery 3"
+            class="gallery-img scroll-animate"
+          />
+          <img
+            src="Assets/Image/bagas.webp"
+            alt="Gallery 4"
+            class="gallery-img scroll-animate"
+          />
+          <img
+            src="Assets/Image/arumbagas2.webp"
+            alt="Gallery 5"
+            class="gallery-img scroll-animate"
+          />
+          <img
+            src="Assets/Image/arumbagas3.webp"
+            alt="Gallery 6"
+            class="gallery-img scroll-animate"
+          />
+        </div>
+      </section>
 
-            <div class="event-pill-wrapper">
-                <div class="event-pill">
-                
-                <!-- Akad Nikah -->
-                <div class="event-item">
-                        <div class="event-icon-rings scroll-animate">
-                            <svg viewBox="0 0 100 100" class="rings-svg">
-                                <circle cx="40" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <circle cx="60" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M50 20 L50 30 M45 25 L55 25" stroke="white" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="event-title-new scroll-animate">Akad Nikah</h3>
-                        <p class="event-month-new scroll-animate">SEPTEMBER</p>
-                        <div class="event-date-row scroll-animate">
-                            <div class="event-side">JUM'AT</div>
-                            <div class="event-day-counter" data-target="25">0</div>
-                            <div class="event-side">2026</div>
-                        </div>
-                        <p class="event-time-new scroll-animate">Pukul 08.00 - Selesai</p>
-                        <div class="event-divider-new scroll-animate"></div>
-                        <p class="event-location-title scroll-animate">KEDIAMAN MEMPELAI WANITA</p>
-                        <p class="event-location-address scroll-animate">Dsn. Berjel, Ds. Pucangro, Kec. Gudo, Kab. Jombang</p>
-                    </div>
-
-                    <div class="event-spacer"></div>
-
-                    <!-- Resepsi -->
-                    <div class="event-item">
-                        <div class="event-icon-rings scroll-animate">
-                            <svg viewBox="0 0 100 100" class="rings-svg">
-                                <circle cx="40" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <circle cx="60" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M50 20 L50 30 M45 25 L55 25" stroke="white" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="event-title-new scroll-animate">Resepsi</h3>
-                        <p class="event-month-new scroll-animate">SEPTEMBER</p>
-                        <div class="event-date-row scroll-animate">
-                            <div class="event-side">JUM'AT</div>
-                            <div class="event-day-counter" data-target="25">0</div>
-                            <div class="event-side">2026</div>
-                        </div>
-                        <p class="event-time-new scroll-animate">Pukul 13.00 - Selesai</p>
-                        <div class="event-divider-new scroll-animate"></div>
-                        <p class="event-location-title scroll-animate">KEDIAMAN MEMPELAI WANITA</p>
-                        <p class="event-location-address scroll-animate">Dsn. Berjel, Ds. Pucangro, Kec. Gudo, Kab. Jombang</p>
-                        <a href="https://maps.google.com/?q=Dsn. Berjel, Ds. Pucangro, Kec. Gudo, Kab. Jombang" target="_blank" class="btn-maps-new scroll-animate">
-                        <span class="material-symbols-rounded">map</span>
-                        Buka Google Maps
-                    </a>
-                    </div>
-
-                    <!-- Ngunduh Mantu -->
-                    <div class="event-item">
-                        <div class="event-icon-rings scroll-animate">
-                            <svg viewBox="0 0 100 100" class="rings-svg">
-                                <circle cx="40" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <circle cx="60" cy="40" r="15" fill="none" stroke="white" stroke-width="2"/>
-                                <path d="M50 20 L50 30 M45 25 L55 25" stroke="white" stroke-width="2"/>
-                            </svg>
-                        </div>
-                        <h3 class="event-title-new scroll-animate">Ngunduh Mantu</h3>
-                        <p class="event-month-new scroll-animate">SEPTEMBER</p>
-                        <div class="event-date-row scroll-animate">
-                            <div class="event-side">SENIN</div>
-                            <div class="event-day-counter" data-target="28">0</div>
-                            <div class="event-side">2026</div>
-                        </div>
-                        <p class="event-time-new scroll-animate">Pukul 10.00 - Selesai</p>
-                        <div class="event-divider-new scroll-animate"></div>
-                        <p class="event-location-title scroll-animate">KEDIAMAN MEMPELAI PRIA</p>
-                        <p class="event-location-address scroll-animate">Dsn. Klepek, Ds. Klepek, Kec. Kunjang, Kab. Kediri</p>
-                        <a href="https://maps.google.com/?q=Dsn. Klepek, Ds. Klepek, Kec. Kunjang, Kab. Kediri" target="_blank" class="btn-maps-new scroll-animate">
-                            <span class="material-symbols-rounded">map</span>
-                            Buka Google Maps
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="section section-gallery">
-
-            <div class="section-heading-container scroll-animate">
-                <div class="section-heading-circle-left"></div>
-                <h2 class="section-heading">Gallery</h2>
-                <div class="section-heading-circle-right"></div>
-            </div>
-            <div class="gallery-grid">
-                <img src="Assets/Image/arumbagas.webp" alt="Gallery 1" class="gallery-img scroll-animate">
-                <img src="Assets/Image/arumbagas1.webp" alt="Gallery 2" class="gallery-img scroll-animate">
-                <img src="Assets/Image/arum.webp" alt="Gallery 3" class="gallery-img scroll-animate">
-                <img src="Assets/Image/bagas.webp" alt="Gallery 4" class="gallery-img scroll-animate">
-                <img src="Assets/Image/arumbagas2.webp" alt="Gallery 5" class="gallery-img scroll-animate">
-                <img src="Assets/Image/arumbagas3.webp" alt="Gallery 6" class="gallery-img scroll-animate">
-            </div>
-        </section>
-
-        <!-- <section id="story" class="section section-story">
+      <!-- <section id="story" class="section section-story">
 
             <div class="section-heading-container scroll-animate">
                 <div class="section-heading-circle-left"></div>
@@ -359,33 +551,39 @@
             </div>
         </section> -->
 
-        <section id="gift" class="section section-gift">
-
-            <h2 class="section-heading-light scroll-animate">Gift</h2>
-            <p class="gift-text scroll-animate">Tanpa mengurangi rasa hormat, apabila Anda ingin memberikan tanda kasih kepada kami, dapat melalui rekening berikut:</p>
-            <div class="gift-btn-container scroll-animate">
-                <button class="btn-rekening" id="showRekening">
-                    <span class="material-symbols-rounded">account_balance</span>
-                    Buka Rekening Digital
-                </button>
+      <section id="gift" class="section section-gift">
+        <h2 class="section-heading-light scroll-animate">Gift</h2>
+        <p class="gift-text scroll-animate">
+          Tanpa mengurangi rasa hormat, apabila Anda ingin memberikan tanda
+          kasih kepada kami, dapat melalui rekening berikut:
+        </p>
+        <div class="gift-btn-container scroll-animate">
+          <button class="btn-rekening" id="showRekening">
+            <span class="material-symbols-rounded">account_balance</span>
+            Buka Rekening Digital
+          </button>
+        </div>
+        <div class="rekening-info hidden" id="rekeningInfo">
+          <div class="rekening-card qr-card scroll-animate">
+            <p class="bank-name">Scan QR Code BCA</p>
+            <div class="qr-code-wrapper">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=8221344961"
+                alt="QR Code BCA"
+                class="qr-img"
+              />
             </div>
-            <div class="rekening-info hidden" id="rekeningInfo">
-                <div class="rekening-card qr-card scroll-animate">
-                    <p class="bank-name">Scan QR Code BCA</p>
-                    <div class="qr-code-wrapper">
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=8221344961" alt="QR Code BCA" class="qr-img">
-                    </div>
-                </div>
-                <div class="rekening-card scroll-animate">
-                    <p class="bank-name">Bank BCA</p>
-                    <p class="rekening-number" id="rekeningNumber">8221344961</p>
-                    <p class="atas-nama">a.n. Bagas Ali Fadli Saputra</p>
-                    <button class="btn-copy" onclick="copyRekening()">
-                        <span class="material-symbols-rounded">content_copy</span>
-                        Salin Nomor
-                    </button>
-                </div>
-                <!-- <div class="rekening-card scroll-animate">
+          </div>
+          <div class="rekening-card scroll-animate">
+            <p class="bank-name">Bank BCA</p>
+            <p class="rekening-number" id="rekeningNumber">8221344961</p>
+            <p class="atas-nama">a.n. Bagas Ali Fadli Saputra</p>
+            <button class="btn-copy" onclick="copyRekening()">
+              <span class="material-symbols-rounded">content_copy</span>
+              Salin Nomor
+            </button>
+          </div>
+          <!-- <div class="rekening-card scroll-animate">
                     <p class="bank-name">Bank Mandiri</p>
                     <p class="rekening-number">130-00-1234567-8</p>
                     <p class="atas-nama">a.n. Bintang Putra Nagara</p>
@@ -394,116 +592,158 @@
                         Salin Nomor
                     </button>
                 </div> -->
+        </div>
+      </section>
+
+      <section id="rsvp" class="section section-rsvp">
+        <div class="section-heading-container scroll-animate">
+          <div class="section-heading-circle-left"></div>
+          <h2 class="section-heading">RSVP</h2>
+          <div class="section-heading-circle-right"></div>
+        </div>
+        <form class="rsvp-form" id="rsvpForm">
+          <p class="rsvp-text scroll-animate">
+            Mohon konfirmasi kehadiran Anda
+          </p>
+          <div class="form-group scroll-animate">
+            <label for="rsvpName">Nama Lengkap</label>
+            <input
+              type="text"
+              id="rsvpName"
+              name="name"
+              required
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div class="form-group scroll-animate">
+            <label for="rsvpAttendance">Konfirmasi Kehadiran</label>
+            <select id="rsvpAttendance" name="attendance" required>
+              <option value="">Pilih...</option>
+              <option value="hadir">Hadir</option>
+              <option value="tidak_hadir">Tidak Hadir</option>
+              <option value="ragu">Ragu-ragu</option>
+            </select>
+          </div>
+          <div class="form-group scroll-animate">
+            <label for="rsvpGuests">Jumlah Tamu</label>
+            <input
+              type="number"
+              id="rsvpGuests"
+              name="guests"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </div>
+          <div class="form-group scroll-animate">
+            <label for="rsvpMessage">Pesan (Opsional)</label>
+            <textarea
+              id="rsvpMessage"
+              name="message"
+              rows="3"
+              placeholder="Pesan untuk mempelai"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit scroll-animate">
+            <span class="material-symbols-rounded">send</span>
+            Kirim
+          </button>
+        </form>
+        <div class="rsvp-status" id="rsvpStatus"></div>
+      </section>
+
+      <section id="wishes" class="section section-wishes">
+        <div class="section-heading-container scroll-animate">
+          <div class="section-heading-circle-left"></div>
+          <h2 class="section-heading">Ucapan &amp; Doa</h2>
+          <div class="section-heading-circle-right"></div>
+        </div>
+        <form class="wishes-form" id="wishesForm">
+          <p class="rsvp-text scroll-animate">
+            Tuliskan ucapan dan doa terbaik Anda untuk kedua mempelai
+          </p>
+          <div class="form-group scroll-animate">
+            <label for="wishName">Nama</label>
+            <input
+              type="text"
+              id="wishName"
+              name="name"
+              required
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div class="form-group scroll-animate">
+            <label for="wishStatus">Status</label>
+            <select id="wishStatus" name="status" required>
+              <option value="">Pilih...</option>
+              <option value="keluarga">Keluarga</option>
+              <option value="teman">Teman</option>
+              <option value="kerabat">Kerabat</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group scroll-animate">
+            <label for="wishMessage">Ucapan</label>
+            <textarea
+              id="wishMessage"
+              name="message"
+              rows="4"
+              required
+              placeholder="Tuliskan ucapan dan doa Anda..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit scroll-animate">
+            <span class="material-symbols-rounded">send</span>
+            Kirim Ucapan
+          </button>
+        </form>
+        <div class="wishes-list" id="wishesList">
+          <div class="wish-card scroll-animate">
+            <div class="wish-header">
+              <span class="wish-name">Saya</span>
+              <span class="wish-status">Teman</span>
             </div>
-        </section>
-
-        <section id="rsvp" class="section section-rsvp">
-
-            <div class="section-heading-container scroll-animate">
-                <div class="section-heading-circle-left"></div>
-                <h2 class="section-heading">RSVP</h2>
-                <div class="section-heading-circle-right"></div>
+            <p class="wish-text">
+              Selamat ya! Semoga langgeng dan bahagia selalu.
+            </p>
+          </div>
+          <div class="wish-card scroll-animate">
+            <div class="wish-header">
+              <span class="wish-name">Saya</span>
+              <span class="wish-status">Keluarga</span>
             </div>
-            <form class="rsvp-form" id="rsvpForm">
-                <p class="rsvp-text scroll-animate">Mohon konfirmasi kehadiran Anda</p>
-                <div class="form-group scroll-animate">
-                    <label for="rsvpName">Nama Lengkap</label>
-                    <input type="text" id="rsvpName" name="name" required placeholder="Masukkan nama Anda">
-                </div>
-                <div class="form-group scroll-animate">
-                    <label for="rsvpAttendance">Konfirmasi Kehadiran</label>
-                    <select id="rsvpAttendance" name="attendance" required>
-                        <option value="">Pilih...</option>
-                        <option value="hadir">Hadir</option>
-                        <option value="tidak_hadir">Tidak Hadir</option>
-                        <option value="ragu">Ragu-ragu</option>
-                    </select>
-                </div>
-                <div class="form-group scroll-animate">
-                    <label for="rsvpGuests">Jumlah Tamu</label>
-                    <input type="number" id="rsvpGuests" name="guests" min="1" max="5" value="1">
-                </div>
-                <div class="form-group scroll-animate">
-                    <label for="rsvpMessage">Pesan (Opsional)</label>
-                    <textarea id="rsvpMessage" name="message" rows="3" placeholder="Pesan untuk mempelai"></textarea>
-                </div>
-                <button type="submit" class="btn-submit scroll-animate">
-                    <span class="material-symbols-rounded">send</span>
-                    Kirim
-                </button>
-            </form>
-            <div class="rsvp-status" id="rsvpStatus"></div>
-        </section>
+            <p class="wish-text">Semoga langgeng dan bahagia selalu. Aamiin.</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="wishes" class="section section-wishes">
+      <section id="closing" class="section section-closing">
+        <div class="closing-content">
+          <div class="closing-photo-wrapper scroll-animate">
+            <img
+              src="Assets/Image/arumbagas.webp"
+              alt="Mempelai"
+              class="closing-photo"
+            />
+          </div>
+          <h2 class="closing-title scroll-animate">Terima Kasih</h2>
+          <p class="closing-text scroll-animate">
+            Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila
+            Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan doa restu kepada
+            kedua mempelai.
+          </p>
+          <p class="closing-salam scroll-animate">Wassalamu'alaikum Wr. Wb.</p>
+          <p class="closing-thank-you scroll-animate">Kami yang berbahagia,</p>
+          <p class="closing-names scroll-animate">Bagas &amp; Arum</p>
+        </div>
+      </section>
 
-            <div class="section-heading-container scroll-animate">
-                <div class="section-heading-circle-left"></div>
-                <h2 class="section-heading">Ucapan & Doa</h2>
-                <div class="section-heading-circle-right"></div>
-            </div>
-            <form class="wishes-form" id="wishesForm">
-                <p class="rsvp-text scroll-animate">Tuliskan ucapan dan doa terbaik Anda untuk kedua mempelai</p>
-                <div class="form-group scroll-animate">
-                    <label for="wishName">Nama</label>
-                    <input type="text" id="wishName" name="name" required placeholder="Masukkan nama Anda">
-                </div>
-                <div class="form-group scroll-animate">
-                    <label for="wishStatus">Status</label>
-                    <select id="wishStatus" name="status" required>
-                        <option value="">Pilih...</option>
-                        <option value="keluarga">Keluarga</option>
-                        <option value="teman">Teman</option>
-                        <option value="kerabat">Kerabat</option>
-                        <option value="lainnya">Lainnya</option>
-                    </select>
-                </div>
-                <div class="form-group scroll-animate">
-                    <label for="wishMessage">Ucapan</label>
-                    <textarea id="wishMessage" name="message" rows="4" required placeholder="Tuliskan ucapan dan doa Anda..."></textarea>
-                </div>
-                <button type="submit" class="btn-submit scroll-animate">
-                    <span class="material-symbols-rounded">send</span>
-                    Kirim Ucapan
-                </button>
-            </form>
-            <div class="wishes-list" id="wishesList">
-                <div class="wish-card scroll-animate">
-                    <div class="wish-header">
-                        <span class="wish-name">Saya</span>
-                        <span class="wish-status">Teman</span>
-                    </div>
-                    <p class="wish-text">Selamat ya! Semoga langgeng dan bahagia selalu.</p>
-                </div>
-                <div class="wish-card scroll-animate">
-                    <div class="wish-header">
-                        <span class="wish-name">Saya</span>
-                        <span class="wish-status">Keluarga</span>
-                    </div>
-                    <p class="wish-text">Semoga langgeng dan bahagia selalu. Aamiin.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="closing" class="section section-closing">
-            <div class="closing-content">
-                <div class="closing-photo-wrapper scroll-animate">
-                    <img src="Assets/Image/arumbagas.webp" alt="Mempelai" class="closing-photo">
-                </div>
-                <h2 class="closing-title scroll-animate">Terima Kasih</h2>
-                <p class="closing-text scroll-animate">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan doa restu kepada kedua mempelai.</p>
-                <p class="closing-salam scroll-animate">Wassalamu'alaikum Wr. Wb.</p>
-                <p class="closing-thank-you scroll-animate">Kami yang berbahagia,</p>
-                <p class="closing-names scroll-animate">Bagas & Arum</p>
-            </div>
-        </section>
-
-        <footer class="footer scroll-animate">
-            <p>Dibuat dengan ❤️ oleh</p>
-            <p class="footer-credit">WSave The Date</p>
-        </footer>
+      <footer class="footer scroll-animate">
+        <p>Dibuat dengan ❤️ oleh</p>
+        <p class="footer-credit">WSave The Date</p>
+      </footer>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

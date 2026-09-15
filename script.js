@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.event-day-counter').forEach(el => counterObserver.observe(el));
 
     // 8. Countdown Timer
-    const weddingDate = new Date('2026-07-16T10:00:00').getTime();
+    const weddingDate = new Date('2026-09-25T08:00:00').getTime();
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = weddingDate - now;
@@ -390,6 +390,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     updateCountdown();
     setInterval(updateCountdown, 1000);
+
+    // 8. Countdown Timer
+    const weddingDate1 = new Date('2026-09-28T10:00:00').getTime();
+    function updateCountdown1() {
+        const now = new Date().getTime();
+        const distance = weddingDate1 - now;
+
+        if (distance < 0) {
+            const timerContainer = document.getElementById('countdownTimer1');
+            timerContainer.innerHTML = '<div class="event-finished">Acara telah selesai</div>';
+            timerContainer.style.display = 'block';
+            return;
+        }
+
+        const days1 = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours1 = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes1 = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds1 = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days1').textContent = String(days1).padStart(2, '0');
+        document.getElementById('hours1').textContent = String(hours1).padStart(2, '0');
+        document.getElementById('minutes1').textContent = String(minutes1).padStart(2, '0');
+        document.getElementById('seconds1').textContent = String(seconds1).padStart(2, '0');
+    }
+    updateCountdown1();
+    setInterval(updateCountdown1, 1000);
 
     // 9. Gift & RSVP & Wishes Logic
     const showRekeningBtn = document.getElementById('showRekening');
